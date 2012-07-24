@@ -10,10 +10,12 @@ console.log("Connecting to Rally");
 
 conn.connect().when(function connected(results) {
    console.log("We are connected"); 
+	var now = new Date();
 
    conn.find({
 	   type: "TimeEntryItem",
-	   fetch: ["Task", "Actuals", "Name", "Values", "Hours"].join(",")
+	   fetch: ["Task", "Actuals", "Name", "Values", "Hours"].join(","),
+	   query: '(Task.Iteration.State = "Committed")'
 	}).when(function foundTasks(results) {
 		var res = results.QueryResult.Results;
 
