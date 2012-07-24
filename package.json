@@ -1,0 +1,20 @@
+{
+  "author": "Colin O'Brien <cobrien@rallydev.com>",
+  "name": "TAM-HW4",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Echo3ToEcho7/TAM-HW4.git"
+  },
+  "main": "lib/rallyapi.js",
+  "dependencies": {
+	"restler": "2.0.1",
+	"future": "2.3.1",
+	"URIjs": 1.6.3"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
