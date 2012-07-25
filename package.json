@@ -10,7 +10,7 @@
   "dependencies": {
 	"restler": "2.0.1",
 	"future": "2.3.1",
-	"URIjs": 1.6.3"
+	"URIjs": "1.6.3"
   },
   "devDependencies": {},
   "optionalDependencies": {},
