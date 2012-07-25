@@ -1,7 +1,16 @@
 TAM-HW4
 =======
 
-Week 4's homework
+ * Understand the code that is in app.js
+ * Make sure that you can run it
+
+*Bonus*
+
+From scratch, create a new JavaScript file that does something with the below API.  You could:
+ 
+ * Create a new Story
+ * Change all of the Stories owned by Paul to you
+ * Automate some process that your customer wants done
 
 RallyConnection API
 ===================
