@@ -62,6 +62,18 @@ Like find, but will get all objects that match the query.
 
 *See RallyConnection.find*
 
+## RallyConnection.create(type, object)
+
+Creates a Rally Object
+
+### Example
+
+	conn.create("task", {
+		Task: {
+			Name: "New Name"
+		}
+	}).when(function creationCompleted(theNewTask) {...});
+
 ## RallyConnection.update(ref, object)
 
 Updates a Rally Object
@@ -73,3 +85,13 @@ Updates a Rally Object
 			Name: "New Name"
 		}
 	}).when(function updateCompleted(theUpdatedTask) {...});
+
+## RallyConnection.del(ref)
+
+Deletes a Rally Object
+
+### Example
+
+	conn
+		.del(someTask._ref)
+		.when(function updateCompleted(theUpdatedTask) {...});
