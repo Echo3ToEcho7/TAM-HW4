@@ -3,7 +3,7 @@ var rally = require("./lib/rallyapi");
 // Create a new connection to Rally
 var conn = new rally.RallyConnection({
     username: "cobrien@rallydev.com",
-    password: "Just4Rally",
+    password: "",
     server: "demo02.rallydev.com"
 });
 
