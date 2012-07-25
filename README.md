@@ -36,7 +36,7 @@ RallyConnection API
 Tests the connection to Rally by hitting the Current User endpoint
 (/slm/webservice/{VERSION}/user.js).
 
-Returns a Future object that when fulfilled with give you the JSON
+Returns a Future object that when fulfilled will give you the JSON
 Object representing the User
 
 ### Example
@@ -50,8 +50,8 @@ Object representing the User
  * type - The type of Rally Artifact to find [required]
  * fetch - The attributes you want to have returned
  * query - The Rally Query to perform
- * start - The starting object to find.  1-based index
- * pagesize - The number of objects to return.
+ * start - The starting object to find.  1-based index [default: 1]
+ * pagesize - The number of objects to return. [default: 200]
 
 Returns a Future Object that when fulfilled will contain the results of
 the query.
